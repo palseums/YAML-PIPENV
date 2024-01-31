@@ -1,0 +1,16 @@
+pytest -v pytest_topics
+pytest -s ( It will not give any detailed output)
+pytest --sw ( It will stop the test at the first occurence of any test failure)
+Name all test modules with test_<some_name>.py
+Name all test functions with def test_<some_name>():
+Test classes should be named Test<somename>.py
+def test_a1():
+    assert 5+5 == 10, "test passed"
+pytest -v pytest_topics\test_module02.py::TestMyStuff
+pytest -v -m "sanity"
+pytest -v -m "sanity and not str"
+pytest -v -m "sanity and str"
+pytest -v -k 'module' --tb=no ( trace back error it is not going to show )
+pytest --collect-only
+pytest --lf ( last fail)
+pytest --ff ( failed first)

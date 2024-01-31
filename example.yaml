@@ -1,0 +1,36 @@
+---
+firstname: palaniappan
+lastname: paramasivam # this is how you do comments
+null-value: null
+null-value1: ~
+null-value2: 
+array1:
+ - content
+ - content2
+array2: [palani,uma,sree,adwaidan]
+about: |
+ palaniappan
+ how
+ are 
+ you
+about1: >
+ palaniappan
+ how
+ are 
+ you
+negative: !!int -16
+applications: # This is a dictinoary
+   name: EazyCards
+   technology: Python
+   team-size: 12
+Monday: &working # Anchor
+  Travel: no
+  office: yes
+Tuesday: *working # Alias
+Wednesday: 
+  <<: *working # Overriding
+  Travel: yes
+...
+
+
+

@@ -1,0 +1,22 @@
+pipenv run python
+pip install pipenv
+create a folder called my_project
+cd my_project
+pipenv install requests
+pipenv shell ( to activate the virtual environment)
+
+pipenv lock -r
+pipenv install pytest --dev
+pipenv uninstall requests
+pipenv --python 3.6
+pipenv --rm ( removing virtual environment)
+pipenv --venv ( It gives path to the environment)
+pipenv check
+pipenv install ( lets say you have done some changes in the pipfile you have to do this)
+pipenv graph
+pipenv lock
+pipenv install --ignore-pipfile
+pipenv run python
+
+
+
